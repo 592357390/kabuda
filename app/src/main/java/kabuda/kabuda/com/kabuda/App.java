@@ -1,0 +1,22 @@
+package kabuda.kabuda.com.kabuda;
+
+import android.app.Application;
+
+import kabuda.kabuda.com.kabuda.net.AndroidBase;
+
+/**
+ * Created by YuanGang on 2018/6/1.
+ */
+
+public class App extends Application {
+
+    public static App app;
+
+    @Override
+    public void onCreate() {
+        super.onCreate();
+        app = this;
+        AndroidBase.init(this, "http://192.168.1.245:7012", "http://192.168.1.245:7012");
+
+    }
+}
