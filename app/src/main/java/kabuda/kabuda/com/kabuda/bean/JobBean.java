@@ -1,10 +1,12 @@
 package kabuda.kabuda.com.kabuda.bean;
 
+import java.io.Serializable;
+
 /**
  * Created by YuanGang on 2018/6/1.
  */
 
-public class JobBean {
+public class JobBean implements Serializable {
 
     /**
      * job_address :

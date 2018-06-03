@@ -16,7 +16,7 @@ public class App extends Application {
     public void onCreate() {
         super.onCreate();
         app = this;
-        AndroidBase.init(this, "http://192.168.1.245:7012", "http://192.168.1.245:7012");
+        AndroidBase.init(this, "http://47.98.180.31:7012", "http://47.98.180.31:7012");
 
     }
 }

@@ -10,8 +10,6 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.wwzz.androidbase.net.RetrofitFactory;
-
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import io.reactivex.functions.Consumer;
@@ -19,6 +17,7 @@ import kabuda.kabuda.com.kabuda.ApiService;
 import kabuda.kabuda.com.kabuda.R;
 import kabuda.kabuda.com.kabuda.bean.UserBean;
 import kabuda.kabuda.com.kabuda.config.AppConfig;
+import kabuda.kabuda.com.kabuda.net.RetrofitFactory;
 import kabuda.kabuda.com.kabuda.net.RxUtils;
 import kabuda.kabuda.com.kabuda.utils.SPUtil;
 
