@@ -1,5 +1,6 @@
 package kabuda.kabuda.com.kabuda.adapter;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.support.annotation.Nullable;
 import android.text.TextUtils;
@@ -13,7 +14,10 @@ import java.util.List;
 
 import kabuda.kabuda.com.kabuda.R;
 import kabuda.kabuda.com.kabuda.activity.DetailActivity;
+import kabuda.kabuda.com.kabuda.activity.LoginActivity;
 import kabuda.kabuda.com.kabuda.bean.JobBean;
+import kabuda.kabuda.com.kabuda.config.AppConfig;
+import kabuda.kabuda.com.kabuda.utils.SPUtil;
 
 /**
  * Created by YuanGang on 2018/6/1.
@@ -37,7 +41,12 @@ public class PartTimeAdapter extends BaseQuickAdapter<JobBean, BaseViewHolder> {
         helper.getView(R.id.commit_order).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(mContext, "您注册时间少于两天暂不能接单", Toast.LENGTH_SHORT).show();
+                if (SPUtil.getBooleanDefultFalse(AppConfig.USER_IS_LOGIN)) {
+                    Toast.makeText(mContext, "您注册时间少于两天暂不能接单", Toast.LENGTH_SHORT).show();
+                } else {
+                    mContext.startActivity(new Intent(mContext, LoginActivity.class));
+                    ((Activity) mContext).finish();
+                }
             }
         });
         helper.getView(R.id.detail).setOnClickListener(new View.OnClickListener() {

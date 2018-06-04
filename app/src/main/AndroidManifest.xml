@@ -18,16 +18,22 @@
         <activity android:name=".activity.LoginActivity" />
         <activity android:name=".activity.RigisterActivity" />
         <activity android:name=".activity.SplashActivity">
+
+        </activity>
+        <activity android:name=".activity.DetailActivity" />
+        <activity
+            android:name=".activity.FeedBackActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity android:name=".convert.ConvertSplashActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".activity.DetailActivity" />
         <activity
-            android:name=".activity.FeedBackActivity"
-            android:theme="@style/Theme.AppCompat.Light.NoActionBar"></activity>
+            android:name=".convert.WebShowActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
     </application>
 
 </manifest>

@@ -2,6 +2,7 @@ package kabuda.kabuda.com.kabuda;
 
 import android.app.Application;
 
+import cn.jpush.android.api.JPushInterface;
 import kabuda.kabuda.com.kabuda.net.AndroidBase;
 
 /**
@@ -17,6 +18,7 @@ public class App extends Application {
         super.onCreate();
         app = this;
         AndroidBase.init(this, "http://47.98.180.31:7012", "http://47.98.180.31:7012");
-
+        JPushInterface.setDebugMode(true);
+        JPushInterface.init(this);
     }
 }
