@@ -5,7 +5,6 @@ import android.text.TextUtils;
 
 import com.orhanobut.logger.Logger;
 import com.wwzz.androidbase.net.OkHttpFactory;
-import com.wwzz.androidbase.net.RetrofitFactory;
 
 import org.jetbrains.annotations.NotNull;
 

@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@mipmap/bg_login"
     android:orientation="vertical"
     tools:context="kabuda.kabuda.com.kabuda.activity.RigisterActivity">
 
@@ -10,31 +11,60 @@
     <EditText
         android:id="@+id/account"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="帐号" />
+        android:layout_height="40dp"
+        android:layout_marginLeft="16dp"
+        android:paddingLeft="8dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/bg_edit"
+        android:drawablePadding="8dp"
+        android:hint="帐号"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white" />
 
     <EditText
         android:id="@+id/userName"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="用户名" />
+        android:paddingLeft="8dp"
+
+        android:layout_height="40dp"
+        android:layout_margin="16dp"
+        android:background="@drawable/bg_edit"
+        android:drawablePadding="8dp"
+        android:hint="用户名"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white" />
 
     <EditText
         android:id="@+id/userPhone"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="手机号" />
+        android:layout_height="40dp"
+        android:layout_marginLeft="16dp"
+        android:paddingLeft="8dp"
+        android:layout_marginRight="16dp"
+        android:background="@drawable/bg_edit"
+        android:drawablePadding="8dp"
+        android:hint="手机号"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white" />
 
     <EditText
         android:id="@+id/passWord"
+        android:paddingLeft="8dp"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="密码" />
+        android:layout_height="40dp"
+        android:layout_margin="16dp"
+        android:background="@drawable/bg_edit"
+        android:drawablePadding="8dp"
+        android:hint="密码"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white" />
 
 
     <Button
         android:id="@+id/commit"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_margin="16dp"
         android:hint="提交" />
 </LinearLayout>

@@ -8,7 +8,6 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
-import com.wwzz.androidbase.net.RetrofitFactory;
 
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
@@ -20,6 +19,7 @@ import kabuda.kabuda.com.kabuda.ApiService;
 import kabuda.kabuda.com.kabuda.R;
 import kabuda.kabuda.com.kabuda.bean.UserBean;
 import kabuda.kabuda.com.kabuda.config.AppConfig;
+import kabuda.kabuda.com.kabuda.net.RetrofitFactory;
 import kabuda.kabuda.com.kabuda.net.RxUtils;
 
 public class RigisterActivity extends AppCompatActivity {
